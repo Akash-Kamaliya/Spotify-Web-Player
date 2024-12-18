@@ -14,12 +14,14 @@ body{
     background-color: #121212;
     width: 340px;
     border-radius: 1rem;
+    border: 2px solid black;
 }
 .main-content{
     background-color: #121212;
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
+    border: 2px solid black;
 }
 
 .music-player{

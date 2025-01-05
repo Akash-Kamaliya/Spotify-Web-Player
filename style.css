@@ -11,100 +11,81 @@ body {
   padding: 0.5rem;
 }
 .searchbar {
-  background-color: #121212;
-  width: 100%;
-  height: 72px;
-  border: 2px solid black;
-  position: fixed;
+  height: 50px;
+  position: sticky;
   top: 0;
-}
-.sidebar {
-  background-color: black;
-  width: 340px;
-  border-radius: 1rem;
-  border: 2px solid black;
-  /* overflow: auto; */
-}
-.main-content {
   background-color: #121212;
-  flex: 1;
-  border-radius: 1rem;
-  overflow: auto;
-  border: 2px solid black;
-  margin-left: 0.25rem;
-  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.music-player {
-  background-color: black;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 72px;
+.Search-div{
+  margin-left: 10rem;
 }
 #search {
   height: 40px;
-  width: 21rem;
+  width: 20rem;
   margin: 0 auto;
   height: 1.3rem;
   border: none;
   background-color: #232323;
-  display: inline-block
+  /* display: inline-block; */
   
 }
 .search-btn{
-    background-color: #232323;
-    border: none;
-    border-radius: 100px;
-    padding: 0.25rem 1rem;
-    font-weight: 700;
-    margin-top: 0.5rem;
-    height: 2.5rem;
-    width: fit-content;
-}
-.search-btn i{
-    color: white;
-    font-size: 1.3rem;
+  background-color: #232323;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  height: 2.5rem;
+  width: fit-content;
+  color: white;
+  font-size: 1.3rem;
 }
 .badge1{
-    background-color: #fff;
-    border: none;
-    border-radius: 100px;
-    padding: 0.25rem 1rem;
-    font-weight: 700;
-    margin-top: 0.5rem;
-    height: 2rem;
-    width: fit-content;
-    margin-left: 11rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: fit-content;
+  margin-left: 0.5rem;
 }
 .badge2{
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 100px;
-    padding: 0.25rem 1rem;
-    font-weight: 700;
-    margin-top: 0.5rem;
-    height: 2rem;
-    width: fit-content;
-    margin-left: 0.75rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: fit-content;
+  margin-left: 0.5rem;
 }
 .home1{
-    font-size: 1.3rem;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
+  font-size: 1.3rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
     background-color: #232323;
     height: 2rem;
     width: 2rem ;
-    margin-left: 32rem;
+}
+.Sline{
+  font-size:1.75rem;
+  font-weight: 100;
 }
 #logo1{
     font-size: 2rem;
     color: #fff;
-
-}
+    
+  }
 .logo{
     font-size: 2rem;
     background-color: #000;
@@ -114,22 +95,50 @@ body {
     background-color: #232323;
     height: 2.1rem;
     width: 2.1rem ;
-}
-#bell{
+  }
+  #bell{
     color: white;
     font-size: 1.3rem;
-}
-#user{
+    margin-left: 0.5rem;
+  }
+  #user{
     color: white;
     font-size: 1.1rem;
-    margin-left: 0.75rem;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-.nav {
-  background-color: #121212;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .sidebar {  
+    margin-top: 2px;
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    border: 2px solid black;
+    /* overflow: auto; */
+  }
+  .main-content {
+    margin-top: 2px;
+    background: linear-gradient( rgba(60,59,59,1) 0%, rgba(16,16,16,1) 30%, rgba(16,16,16,1) 100%);
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    border: 2px solid black;
+    margin-left: 0.25rem;
+    padding: 1rem;
+  }
+  
+  .music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+  }
+  .nav {
+    background-color: #121212;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -208,9 +217,12 @@ a {
     width: 150px;
     border-radius: 0.5rem;
     padding: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
 .card-container{
     display: flex;
+    flex-wrap: wrap;
 }
 .card-img {
     width: 100%;
@@ -222,4 +234,122 @@ a {
 .card-info {
     font-size: 0.75rem;
     opacity : 0.8;
+}
+.footer{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.Line {
+  margin-top: 100px;
+  width: 90%;
+  height: 50%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+.music-player-img{
+  height: 50px;
+  width: 50px;
+  padding: 0.5rem;
+}
+.Music-Play{
+  display: flex;
+  align-items: center;
+}
+.songname{
+  margin: 0;
+  font-weight: 700;
+}
+.Author{
+  margin:0;
+  font-size: 10px;
+  font-weight: 300;
+}
+.Name i {
+  margin-left: 1rem;
+}
+.Play-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Play-image{
+  height: 3rem;
+  width: 3rem;
+}
+.music-player {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+.song-bar {
+  height: 20px;
+}
+.audio {
+  width: 300px;
+  background-color: #000;
+}
+input[type="range"] {
+  -webkit-appearance: none; /* Remove default browser styles */
+  appearance: none;
+  width: 400px;
+  height: 4px;
+  background: #ddd;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  
+}
+input[type="range"]::-moz-range-thumb .audio{
+  width: 20px;
+  height: 20px;
+  background:black;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other img {
+  height: 3rem;
+  width: 3rem;
+}
+
+
+
+
+
+
+@media ( max-width:1000px){
+  .Button-div button{
+    display: none;
+  }
+  .Search-div{
+    margin:0;
+  }
+}
+@media ( max-width:600px){
+  #search{
+    width:10rem;
+  }
+}
+@media (max-width:400px){
+  .Spotify-logo{
+    display: none;
+  }
+  .Button-div{
+    display: none;
+  }
+ .searchbar{
+  justify-content: space-around;
+ }
+}
+@media ( max-width:300px){
+  #search{
+    width:7rem;
+  }
 }

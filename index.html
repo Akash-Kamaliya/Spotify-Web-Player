@@ -19,10 +19,12 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" href="logo.png" />
+    <link rel="icon" href="Images/logo.png" />
   </head>
   <body>
-    <div class="searhbar">
+    <div class="searchbar">
+
+      <div class="Spotify-logo">
       <button class="logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -36,18 +38,26 @@
           />
         </svg>
       </button>
+    </div>
+
+    <div class="Search-div">
       <button class="home1"><i class="fa-solid fa-house" id="home"></i></button>
       <button class="search-btn">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" name="search" id="search" />
+        <span class="Sline">|</span>
         <i class="fa-solid fa-folder-plus"></i>
       </button>
+    </div>
+
+      <div class="Button-div">
       <button class="badge1">Explore Premium</button>
       <button class="badge2">
         <i class="fa-regular fa-circle-down"></i> Install App
       </button>
       <i class="fa-regular fa-bell" id="bell"></i>
       <i class="fa-regular fa-user" id="user"></i>
+    </div>
     </div>
     <div class="main">
       <div class="sidebar">
@@ -64,7 +74,7 @@
         <div class="library">
           <div class="option">
             <div class="lib-option nav-option" style="opacity: 1">
-              <img src="library_icon.png" />
+              <img src="Images/library_icon.png" />
               <a href="#">You Library</a>
             </div>
             <div class="icon">
@@ -87,20 +97,78 @@
         </div>
       </div>
       <div class="main-content">
-        <div class="cards">
-          <h2>
-            Recentaly Played
-          </h2>
-          <div class="card-container">
-            <div class="card">
-              <img src="card1img.jpeg" class="card-img">
-              <p class="card-title">Top 50 - Global</p>
-              <p class="card-info">Your daily updates of the most played tracks...</p>
-            </div>
+        <h2>Recentaly Played</h2>
+
+        <div class="card-container">
+          <div class="card">
+            <img src="Images/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="Images/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="Images/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="Images/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks...
+            </p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="Line"></div>
           </div>
         </div>
       </div>
-      <div class="music-player">music player</div>
+      <div class="music-player">
+        <div class="Music-Play">
+          <div class="img"><img src="Images/card1img.jpeg" class="music-player-img" /></div>
+          <div class="Name"> <p class="songname">Top 50 - Global<i class="fa-regular fa-heart"></i></p>
+          
+            <p class="Author">
+              Your daily updates of the most played tracks...
+            </p></div>
+        </div>
+        <div class="Player">
+          <div class="Play-img">
+          <img src="Images/Shffle.png" class="Play-image">
+          <img src="Images/Prives.png" class="Play-image">
+          <a class="play-btn" href="Songs/Aura.mpeg"><img src="Images/Play.png" class="Play-image"></a>
+          
+          <img src="Images/Next.png" class="Play-image">
+          <img src="Images/Reapeat.png" class="Play-image">
+          </div>
+          <div class="Music">
+            <input type="range" min="0" max="100" value="50" class="audio">
+          </div>
+        </div>
+        <div class="other">
+          <img src="Images/Play1.png">
+          <img src="Images/mice.png">
+          <img src="Images/Stack.png">
+          <img src="Images/Brows.png">
+          <img src="Images/Sound.png">
+          <img src="Images/Cast.png">
+          <img src="Images/Big.png">
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -252,7 +252,7 @@ body {
 }
 
 .card{
-    background-color: #232323;
+    background-color: #121212;
     width: 150px;
     border-radius: 0.5rem;
     padding: 0.5rem;
@@ -356,6 +356,9 @@ input[type="range"]::-moz-range-thumb .audio{
 .other img {
   height: 3rem;
   width: 3rem;
+}
+.artist{
+  border-radius: 50%;
 }
 
 
